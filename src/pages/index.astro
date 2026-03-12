@@ -15,31 +15,41 @@ const metadata = {
 
   <!-- AITHERGY HERO ************************************************ -->
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Work with Aithergy',
-        href: '#contact',
-      },
-      {
-        text: 'Explore Ecosenz',
-        href: '/ecosenz',
-      },
-    ]}
-    image={{ src: '~/assets/images/hero-aithergy.png', alt: 'Aithergy Hero Image' }}
-  >
-    <Fragment slot="title">
-      Founder‑led innovation at the intersection of
-      <span class="text-accent dark:text-white">AI, energy systems</span>
-      and human performance.
-    </Fragment>
+  <section class="relative w-full overflow-hidden">
+    <!-- Full-width background image -->
+    <div 
+      class="absolute inset-0 w-full h-full bg-cover bg-center opacity-90"
+      style="background-image: url('/src/assets/images/hero-aithergy.png');"
+    ></div>
 
-    <Fragment slot="subtitle">
-      Aithergy helps founders and organisations unlock clarity, accelerate innovation, and build systems that scale —
-      blending AI‑driven automation, energy‑system thinking, and practical product development experience.
-    </Fragment>
-  </Hero>
+    <!-- Hero content stays on top -->
+    <div class="relative z-10">
+      <Hero
+        actions={[
+          {
+            variant: 'primary',
+            text: 'Work with Aithergy',
+            href: '#contact',
+          },
+          {
+            text: 'Explore Ecosenz',
+            href: '/ecosenz',
+          },
+        ]}
+      >
+        <div slot="title" class="px-6 lg:px-12">
+          Founder‑led innovation at the intersection of
+          <span class="text-accent dark:text-white">AI, energy systems</span>
+          and human performance.
+        </div>
+
+        <div slot="subtitle" class="px-6 lg:px-12">
+          Aithergy helps founders and organisations unlock clarity, accelerate innovation, and build systems that scale —
+          blending AI‑driven automation, energy‑system thinking, and practical product development experience.
+        </div>
+      </Hero>
+    </div>
+  </section>
 
   <!-- ABOUT AITHERGY ************************************************ -->
 
@@ -64,7 +74,7 @@ const metadata = {
   <!-- WHAT AITHERGY DOES ******************************************** -->
 
   <section class="py-20 lg:py-28 bg-blue-50/40 dark:bg-transparent">
-    <div class="container max-w-5xl">
+    <div class="container max-w-5xl px-6 lg:px-8">
       <h2 class="text-3xl font-semibold tracking-tight mb-10">What Aithergy Does</h2>
 
       <div class="grid gap-10 md:grid-cols-3">
@@ -101,7 +111,7 @@ const metadata = {
   <!-- INNOVATION & ENERGY SYSTEMS *********************************** -->
 
   <section class="py-20 lg:py-28">
-    <div class="container max-w-4xl">
+    <div class="container max-w-4xl px-6 lg:px-8">
       <h2 class="text-3xl font-semibold tracking-tight mb-6">Innovation & Energy Systems</h2>
 
       <p class="text-lg text-slate-600 mb-4">
@@ -121,7 +131,7 @@ const metadata = {
   <!-- ECOSENZ TEASER ************************************************ -->
 
   <section class="py-20 lg:py-28 bg-blue-50/40 dark:bg-transparent">
-    <div class="container max-w-3xl">
+    <div class="container max-w-3xl px-6 lg:px-8">
       <h2 class="text-3xl font-semibold tracking-tight mb-6">Ecosenz — Wellness Division</h2>
 
       <p class="text-lg text-slate-600 mb-4">
