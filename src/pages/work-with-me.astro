@@ -1,0 +1,180 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Work With Me — Aithergy',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- HERO (W2) **************************************************** -->
+
+  <section class="relative w-full overflow-hidden min-h-[750px] lg:min-h-[850px]">
+    <!-- Light abstract energy-flow background -->
+    <div 
+      class="absolute inset-0 w-full h-full bg-cover bg-center opacity-90"
+      style="background-image: url('/images/consulting-hero.png');"
+    ></div>
+
+    <!-- Hero content -->
+    <div class="relative z-10 flex flex-col justify-center h-full px-6 lg:px-12 max-w-4xl">
+      <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight mb-6">
+        Strategic intelligence for founders, operators and energy innovators.
+      </h1>
+
+      <p class="text-lg text-slate-300 max-w-2xl mb-8">
+        Aithergy blends AI strategy, systems thinking and human performance to help leaders build clarity, 
+        momentum and intelligent solutions — from founder workflows to large‑scale energy optimisation.
+      </p>
+
+      <a 
+        href="mailto:info@aithergy.com" 
+        class="inline-block bg-accent text-white font-semibold px-6 py-3 rounded-lg shadow hover:opacity-90 transition"
+      >
+        Contact Me
+      </a>
+    </div>
+  </section>
+
+  <!-- WHO I HELP *************************************************** -->
+
+  <section class="py-20 lg:py-28">
+    <div class="container max-w-4xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">Who I help</h2>
+
+      <p class="text-lg text-slate-600 mb-4">
+        I work with founders, operators, innovation teams and energy leaders who want to build intelligent systems, 
+        improve performance and make better decisions using AI and modern optimisation frameworks.
+      </p>
+
+      <ul class="list-disc pl-6 text-slate-600 space-y-2 mt-4">
+        <li>Founders building AI‑enabled products or workflows</li>
+        <li>Operators looking to streamline processes and reduce complexity</li>
+        <li>Innovation teams exploring new models, tools or systems</li>
+        <li>Energy authorities and renewable operators seeking optimisation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHAT I OFFER ************************************************* -->
+
+  <section class="py-20 lg:py-28 bg-blue-50/40 dark:bg-transparent">
+    <div class="container max-w-5xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-10">What I offer</h2>
+
+      <div class="grid gap-10 md:grid-cols-3">
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">AI Strategy & Automation</h3>
+          <p class="text-slate-600">
+            Practical, founder‑friendly AI strategy — from workflow automation to intelligent tooling and 
+            decision‑support systems.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Systems Thinking & Clarity</h3>
+          <p class="text-slate-600">
+            Helping leaders cut through complexity, design better processes and build systems that scale with clarity 
+            and intention.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Founder Performance</h3>
+          <p class="text-slate-600">
+            Tools, routines and frameworks to support energy, focus and cognitive performance — the human side of 
+            building.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ENERGY OPTIMISATION (TEASER) ******************************** -->
+
+  <section class="py-20 lg:py-28">
+    <div class="container max-w-4xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">AI‑Driven Energy Optimisation</h2>
+
+      <p class="text-lg text-slate-600 mb-4">
+        I help local authorities and renewable operators use AI‑based optimisation to reduce curtailment, improve 
+        utilisation and unlock new value from wasted wind and solar energy.
+      </p>
+
+      <p class="text-lg text-slate-600 mb-4">
+        This includes modelling intelligent routing, storage strategies and e‑fuel pathways — enabling smarter 
+        decisions around batteries, hydrogen, methanol and ammonia production.
+      </p>
+
+      <a 
+        href="/energy-systems" 
+        class="inline-block mt-4 text-accent font-semibold hover:underline"
+      >
+        Learn more →
+      </a>
+    </div>
+  </section>
+
+  <!-- HOW I WORK *************************************************** -->
+
+  <section class="py-20 lg:py-28 bg-blue-50/40 dark:bg-transparent">
+    <div class="container max-w-4xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">How I work</h2>
+
+      <div class="space-y-8">
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">1. Diagnose</h3>
+          <p class="text-slate-600">
+            We map your current systems, workflows or energy flows to understand constraints, opportunities and 
+            leverage points.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">2. Design</h3>
+          <p class="text-slate-600">
+            I build a clear, actionable plan — whether it’s an AI workflow, optimisation model, or strategic 
+            operating system.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">3. Deploy</h3>
+          <p class="text-slate-600">
+            We implement the solution, refine it and ensure it integrates smoothly into your operations or 
+            decision‑making processes.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA *********************************************************** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact Me',
+        href: 'mailto:info@aithergy.com',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to work together?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Whether you're a founder, operator or energy innovator — let's explore how intelligent systems can support 
+      your next stage of growth.
+    </Fragment>
+  </CallToAction>
+
+</Layout>
