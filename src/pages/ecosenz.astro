@@ -1,0 +1,153 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Ecosenz — Functional Wellness by Aithergy',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- ECOSENZ HERO ************************************************ -->
+
+  <section class="relative w-full overflow-hidden min-h-[750px] lg:min-h-[900px]">
+    <!-- Full-width background image -->
+    <div 
+      class="absolute inset-0 w-full h-full bg-cover bg-center opacity-90"
+      style="background-image: url('/images/ecosenz-hero.png');"
+    ></div>
+
+    <!-- Hero content -->
+    <div class="relative z-10 flex flex-col justify-center h-full px-6 lg:px-12 max-w-4xl">
+      <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight mb-6">
+        Functional wellness powered by
+        <span class="text-accent dark:text-white">body, mind and AI.</span>
+      </h1>
+
+      <p class="text-lg text-slate-200 max-w-2xl mb-8">
+        Ecosenz blends ancient Ayurvedic principles with modern nutritional science and AI‑guided personalisation —
+        creating functional powders designed to support energy, cognition and daily performance.
+      </p>
+
+      <a 
+        href="https://ecosenz.co.uk" 
+        class="inline-block bg-accent text-white font-semibold px-6 py-3 rounded-lg shadow hover:opacity-90 transition"
+      >
+        Explore Ecosenz
+      </a>
+    </div>
+  </section>
+
+  <!-- WHAT IS ECOSENZ ********************************************** -->
+
+  <section class="py-20 lg:py-28">
+    <div class="container max-w-3xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">What is Ecosenz?</h2>
+
+      <p class="text-lg text-slate-600 mb-4">
+        Ecosenz is the wellness division of Aithergy — built on the belief that human performance is a system. 
+        When energy, cognition and physiology are aligned, everything flows more naturally.
+      </p>
+
+      <p class="text-lg text-slate-600">
+        Our functional powders are crafted using Ayurvedic principles, modern nutritional science and AI‑driven 
+        personalisation. The result is a range of blends designed to support clarity, vitality and daily balance.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHY FUNCTIONAL POWDERS **************************************** -->
+
+  <section class="py-20 lg:py-28 bg-blue-50/40 dark:bg-transparent">
+    <div class="container max-w-4xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">Why functional powders?</h2>
+
+      <p class="text-lg text-slate-600 mb-4">
+        Powders allow for clean, intentional formulations without fillers, capsules or unnecessary additives. 
+        They absorb quickly, blend easily into daily routines, and offer a flexible way to support your body’s 
+        natural rhythms.
+      </p>
+
+      <p class="text-lg text-slate-600">
+        Each Ecosenz blend is designed to work with — not against — your physiology, supporting energy, digestion, 
+        cognition and recovery in a way that feels natural and sustainable.
+      </p>
+    </div>
+  </section>
+
+  <!-- ANCIENT × MODERN ********************************************** -->
+
+  <section class="py-20 lg:py-28">
+    <div class="container max-w-4xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">Ancient principles × modern science</h2>
+
+      <p class="text-lg text-slate-600 mb-4">
+        Ecosenz blends are rooted in Ayurvedic wisdom — a system that has guided human wellbeing for thousands of years. 
+        But we pair this with modern nutritional science, evidence‑based formulation and AI‑guided personalisation.
+      </p>
+
+      <p class="text-lg text-slate-600">
+        This fusion allows us to create products that feel timeless yet modern, intuitive yet precise — supporting 
+        both body and mind in a holistic, intelligent way.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCT CATEGORIES ******************************************** -->
+
+  <section class="py-20 lg:py-28 bg-blue-50/40 dark:bg-transparent">
+    <div class="container max-w-5xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-10">Our product categories</h2>
+
+      <div class="grid gap-10 md:grid-cols-3">
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Daily foundational blends</h3>
+          <p class="text-slate-600">
+            Everyday powders designed to support energy, digestion and overall balance — your daily baseline for 
+            feeling grounded and clear.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Performance blends</h3>
+          <p class="text-slate-600">
+            Targeted formulations for focus, cognitive clarity and sustained performance — ideal for work, training 
+            or deep creative sessions.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Travel & convenience formats</h3>
+          <p class="text-slate-600">
+            Single‑serve sachets and portable blends designed for life on the move — wellness that travels with you.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA *********************************************************** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Explore Ecosenz',
+        href: 'https://ecosenz.co.uk',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Wellness that works with your body.
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Explore the full Ecosenz range — crafted with intention, backed by science, and designed for daily performance.
+    </Fragment>
+  </CallToAction>
+
+</Layout>
