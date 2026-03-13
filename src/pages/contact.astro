@@ -1,79 +1,95 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact — Aithergy',
+  ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <!-- HERO ********************************************************* -->
 
-  <ContactUs
-    id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
+  <section class="relative w-full overflow-hidden min-h-[550px] lg:min-h-[650px]">
+    <!-- Light abstract energy-flow background -->
+    <div 
+      class="absolute inset-0 w-full h-full bg-cover bg-center opacity-90"
+      style="background-image: url('/images/contact-hero.png');"
+    ></div>
+
+    <div class="relative z-10 flex flex-col justify-center h-full px-6 lg:px-12 max-w-3xl">
+      <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight mb-6">
+        Let’s connect.
+      </h1>
+
+      <p class="text-lg text-slate-300 max-w-2xl">
+        Whether you're exploring AI strategy, systems design or energy optimisation — I’d love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT DETAILS ********************************************** -->
+
+  <section class="py-20 lg:py-28">
+    <div class="container max-w-3xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">Get in touch</h2>
+
+      <p class="text-lg text-slate-600 mb-6">
+        The simplest way to reach me is by email. I respond personally to every message.
+      </p>
+
+      <div class="bg-white dark:bg-slate-900 shadow rounded-xl p-8 border border-slate-200 dark:border-slate-700">
+        <h3 class="text-xl font-semibold mb-3">Email</h3>
+        <a 
+          href="mailto:info@aithergy.com" 
+          class="text-accent font-medium hover:underline"
+        >
+          info@aithergy.com
+        </a>
+
+        <div class="mt-8">
+          <h3 class="text-xl font-semibold mb-3">Location</h3>
+          <p class="text-slate-600">
+            Sevenoaks, Kent, United Kingdom
+          </p>
+        </div>
+
+        <!-- Optional booking link (future) -->
+        <!--
+        <div class="mt-8">
+          <h3 class="text-xl font-semibold mb-3">Book a call</h3>
+          <a 
+            href="https://calendly.com/your-link" 
+            class="text-accent font-medium hover:underline"
+          >
+            Schedule a 30‑minute intro call →
+          </a>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA *********************************************************** -->
+
+  <CallToAction
+    actions={[
       {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
+        variant: 'primary',
+        text: 'Email Me',
+        href: 'mailto:info@aithergy.com',
       },
     ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
-  />
+  >
+    <Fragment slot="title">
+      Ready to explore what we can build?
+    </Fragment>
 
-  <!-- Features2 Widget ************** -->
+    <Fragment slot="subtitle">
+      Reach out anytime — I’d be happy to discuss your project, idea or challenge.
+    </Fragment>
+  </CallToAction>
 
-  <Features2
-    title="We are here to help!"
-    items={[
-      {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-      },
-      {
-        title: 'Contact sales',
-        description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Email',
-        description: 'contact@support.com',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:map-pin',
-      },
-    ]}
-  />
 </Layout>

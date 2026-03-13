@@ -1,0 +1,158 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Energy Systems — Aithergy',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- HERO ********************************************************* -->
+
+  <section class="relative w-full overflow-hidden min-h-[750px] lg:min-h-[850px]">
+    <!-- Light abstract energy-flow background -->
+    <div 
+      class="absolute inset-0 w-full h-full bg-cover bg-center opacity-90"
+      style="background-image: url('/images/energy-hero.png');"
+    ></div>
+
+    <div class="relative z-10 flex flex-col justify-center h-full px-6 lg:px-12 max-w-4xl">
+      <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight mb-6">
+        AI‑Driven Optimisation for Modern Energy Systems.
+      </h1>
+
+      <p class="text-lg text-slate-300 max-w-2xl mb-8">
+        Aithergy helps local authorities, grid operators and renewable developers reduce curtailment, improve 
+        utilisation and unlock new value from wasted wind and solar energy using advanced AI‑based optimisation.
+      </p>
+
+      <a 
+        href="mailto:info@aithergy.com" 
+        class="inline-block bg-accent text-white font-semibold px-6 py-3 rounded-lg shadow hover:opacity-90 transition"
+      >
+        Contact Me
+      </a>
+    </div>
+  </section>
+
+  <!-- THE PROBLEM ************************************************** -->
+
+  <section class="py-20 lg:py-28">
+    <div class="container max-w-4xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">The problem: wasted renewable energy</h2>
+
+      <p class="text-lg text-slate-600 mb-4">
+        Across the UK and Europe, wind and solar farms are routinely asked to shut down or “curtail” production — 
+        not because the energy isn’t needed, but because the grid cannot absorb or route it efficiently.
+      </p>
+
+      <p class="text-lg text-slate-600 mb-4">
+        This wasted energy represents a significant financial cost, a missed opportunity for clean power, and a 
+        growing challenge for operators and local authorities working toward net‑zero goals.
+      </p>
+
+      <p class="text-lg text-slate-600">
+        The issue isn’t generation. It’s intelligence — how we route, store and utilise the energy we already have.
+      </p>
+    </div>
+  </section>
+
+  <!-- THE OPPORTUNITY ********************************************** -->
+
+  <section class="py-20 lg:py-28 bg-blue-50/40 dark:bg-transparent">
+    <div class="container max-w-4xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">The opportunity: intelligent routing & storage</h2>
+
+      <p class="text-lg text-slate-600 mb-4">
+        With the right optimisation models, wasted energy can be redirected into productive pathways — from 
+        battery storage to e‑fuel production (methanol, ammonia, hydrogen) and other flexible demand systems.
+      </p>
+
+      <p class="text-lg text-slate-600 mb-4">
+        Instead of shutting down turbines during high‑wind periods, operators can use AI‑driven modelling to 
+        simulate optimal routing, storage utilisation and conversion strategies.
+      </p>
+
+      <p class="text-lg text-slate-600">
+        This transforms curtailment from a cost into an opportunity.
+      </p>
+    </div>
+  </section>
+
+  <!-- OUR APPROACH ************************************************* -->
+
+  <section class="py-20 lg:py-28">
+    <div class="container max-w-5xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-10">Our approach</h2>
+
+      <div class="grid gap-10 md:grid-cols-3">
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">AI‑Based Optimisation</h3>
+          <p class="text-slate-600">
+            We use advanced optimisation algorithms to model energy flows, identify bottlenecks and simulate 
+            intelligent routing strategies across complex networks.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Scenario Modelling</h3>
+          <p class="text-slate-600">
+            We explore multiple scenarios — from high‑wind events to storage saturation — to understand how 
+            different decisions impact utilisation and cost.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Storage & E‑Fuel Pathways</h3>
+          <p class="text-slate-600">
+            We evaluate the feasibility of routing excess energy into batteries, hydrogen, methanol, ammonia and 
+            other flexible demand systems.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO THIS IS FOR ********************************************** -->
+
+  <section class="py-20 lg:py-28 bg-blue-50/40 dark:bg-transparent">
+    <div class="container max-w-4xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight mb-6">Who this is for</h2>
+
+      <ul class="list-disc pl-6 text-slate-600 space-y-2 mt-4">
+        <li>Local authorities exploring renewable integration</li>
+        <li>Wind and solar farm operators facing curtailment</li>
+        <li>Grid operators seeking intelligent balancing strategies</li>
+        <li>Energy storage and e‑fuel developers</li>
+        <li>Innovation teams evaluating new energy pathways</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA *********************************************************** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact Me',
+        href: 'mailto:info@aithergy.com',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to explore intelligent energy systems?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      If you're working with renewable energy, storage or grid optimisation — let's explore how AI‑driven modelling 
+      can reduce waste and unlock new value.
+    </Fragment>
+  </CallToAction>
+
+</Layout>
