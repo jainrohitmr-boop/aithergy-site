@@ -20,7 +20,7 @@ metadata:
     site_name: Aithergy
     type: website
     images:
-      - url: './src/assets/og-aithergy.png'
+      - url: '/og-aithergy.png'
         width: 1200
         height: 628
 
@@ -28,7 +28,7 @@ metadata:
     site: '@aithergy'
     cardType: summary_large_image
     images:
-      - url: './src/assets/og-aithergy.png'
+      - url: '/og-aithergy.png'
 
 
 i18n:
