@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Aithergy
     images:
-      - url: '/assets/og-aithergy.png'
+      - src: '~/assets/og-aithergy.png'
         width: 1200
         height: 628
     type: website
