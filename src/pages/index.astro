@@ -1,8 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { METADATA } from 'astrowind:config';
 
 const metadata = {
+  ...METADATA,
   title: 'Aithergy — Strategic Intelligence',
   ignoreTitleTemplate: true,
 };
