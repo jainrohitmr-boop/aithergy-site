@@ -19,15 +19,15 @@ metadata:
   openGraph:
     site_name: Aithergy
     type: website
-    images:
-      - src: '/src/assets/og-aithergy.png'
-        alt: 'Aithergy — Strategic Intelligence'
-        width: 1200
-        height: 628
-        format: png
-    twitter:
-      site: '@aithergy'
-      cardType: summary_large_image
+    image: '/src/assets/og-aithergy.png'
+    image_width: 1200
+    image_height: 628
+
+  twitter:
+    site: '@aithergy'
+    card: summary_large_image
+    image: '/src/assets/og-aithergy.png'
+
 
 i18n:
   language: en
