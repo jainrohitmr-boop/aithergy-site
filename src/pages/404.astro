@@ -1,11 +1,18 @@
 ---
 import Layout from '~/layouts/Layout.astro';
 import { getHomePermalink } from '~/utils/permalinks';
+import { METADATA } from 'astrowind:config';
 
 const title = `Error 404`;
 ---
 
-<Layout metadata={{ title }}>
+<Layout metadata={{
+  title: "Error 404",
+  openGraph: {
+    ...METADATA.openGraph,
+    url: Astro.url.pathname
+  }
+}}>
   <section class="flex items-center h-full p-16">
     <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
       <div class="max-w-md text-center">
