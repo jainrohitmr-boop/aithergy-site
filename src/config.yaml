@@ -16,12 +16,14 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: Aithergy
-    images:
-      - src: './src/assets/og-aithergy.png'
-        width: 1200
-        height: 628
-    type: website
+  site_name: Aithergy
+  type: website
+  images:
+    - src: './src/assets/og-aithergy.png'
+      alt: 'Aithergy — Strategic Intelligence'
+      width: 1200
+      height: 628
+      format: png
   twitter:
     #handle: '@aithergy'   # optional — or remove if you don’t use Twitter
     site: '@aithergy'
