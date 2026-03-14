@@ -20,7 +20,7 @@ metadata:
     site_name: Aithergy
     type: website
     images:
-      - src: './src/assets/og-aithergy.png'
+      - src: '/src/assets/og-aithergy.png'
         alt: 'Aithergy — Strategic Intelligence'
         width: 1200
         height: 628
