@@ -19,14 +19,16 @@ metadata:
   openGraph:
     site_name: Aithergy
     type: website
-    image: '/og-aithergy.png'
-    image_width: 1200
-    image_height: 628
+    images:
+      - url: '/og-aithergy.png'
+        width: 1200
+        height: 628
 
   twitter:
     site: '@aithergy'
-    card: summary_large_image
-    image: '/og-aithergy.png'
+    cardType: summary_large_image
+    images:
+      - url: '/og-aithergy.png'
 
 
 i18n:
