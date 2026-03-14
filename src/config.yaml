@@ -15,19 +15,19 @@ metadata:
   robots:
     index: true
     follow: true
-openGraph:
-  site_name: Aithergy
-  type: website
-  images:
-    - src: './src/assets/og-aithergy.png'
-      alt: 'Aithergy — Strategic Intelligence'
-      width: 1200
-      height: 628
-      format: png
-  twitter:
-    #handle: '@aithergy'   # optional — or remove if you don’t use Twitter
-    site: '@aithergy'
-    cardType: summary_large_image
+
+  openGraph:
+    site_name: Aithergy
+    type: website
+    images:
+      - src: './src/assets/og-aithergy.png'
+        alt: 'Aithergy — Strategic Intelligence'
+        width: 1200
+        height: 628
+        format: png
+    twitter:
+      site: '@aithergy'
+      cardType: summary_large_image
 
 i18n:
   language: en
@@ -40,25 +40,25 @@ apps:
 
     post:
       isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/%slug%'
       robots:
         index: true
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'blog'
       robots:
         index: true
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'category'
       robots:
         index: true
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'tag'
       robots:
         index: false
 
@@ -68,9 +68,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: null
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
-
-  
+  theme: 'system'
